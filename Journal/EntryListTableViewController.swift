@@ -12,7 +12,9 @@ class EntryListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+		
+		let nc = NSNotificationCenter.defaultCenter()
+		nc.addObserver(self, selector: "entriesUpdated:", name: EntriesUpdatedNotification, object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -68,11 +70,8 @@ class EntryListTableViewController: UITableViewController {
             }
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+	
+	func entriesUpdated(notification: NSNotification) {
+		self.tableView.reloadData()
+	}
 }

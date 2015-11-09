@@ -26,7 +26,7 @@ class Entry: Equatable {
     }
     
     init?(dictionary: Dictionary<String, AnyObject>) {
-        guard let timestamp = dictionary[timestampKey] as? NSDate,
+        guard //let timestamp = dictionary[timestampKey] as? NSDate,
             let title = dictionary[titleKey] as? String,
             let text = dictionary[textKey] as? String else {
                 
@@ -38,7 +38,7 @@ class Entry: Equatable {
                 return nil
         }
         
-        self.timestamp = timestamp
+        self.timestamp = NSDate()
         self.title = title
         self.text = text
 
@@ -47,7 +47,7 @@ class Entry: Equatable {
     func dictionaryCopy() -> Dictionary<String, AnyObject> {
         
         let dictionary = [
-            timestampKey : self.timestamp,
+            //timestampKey : self.timestamp,
             titleKey : self.title,
             textKey : self.text
         ]
