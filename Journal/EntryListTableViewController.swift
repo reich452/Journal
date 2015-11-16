@@ -42,10 +42,10 @@ class EntryListTableViewController: UITableViewController {
             
             let entry = EntryController.sharedController.entries[indexPath.row]
             
-            EntryController.sharedController.removeEntry(entry)
-            
             // Delete the row from the table view
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+			
+			EntryController.sharedController.removeEntry(entry)
             
         }
     }

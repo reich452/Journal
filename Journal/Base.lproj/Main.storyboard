@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="INT-Qe-Wpl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="INT-Qe-Wpl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c75-q3-3Da" id="ZHG-qZ-SAd">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -65,9 +65,6 @@
                                     <constraint firstAttribute="height" constant="32" id="yhv-fe-h6O"/>
                                 </constraints>
                                 <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="clearButtonTapped:" destination="XMQ-vl-Wjr" eventType="touchUpInside" id="c7H-Vb-fiL"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-PI-fr4">
                                 <rect key="frame" x="20" y="84" width="560" height="30"/>
@@ -107,7 +104,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="bodyTextView" destination="rg4-5z-CB0" id="iAG-4D-by9"/>
                         <outlet property="titleTextField" destination="R7k-PI-fr4" id="gLE-hQ-KXy"/>
                     </connections>
                 </viewController>
